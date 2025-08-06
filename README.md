@@ -362,8 +362,8 @@ fwupdate.sle,1,SUSE Linux Enterprise,fwupdate,12,mail:security-team@suse.de
 ```
 grub2: FIXME not yet correct
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,5,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
-grub.sle,1,SUSE Linux Enterprise,grub2,2.06,mailto:security@suse.de
+grub,5,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.sle,1,SUSE Linux Enterprise,grub2,2.12,mailto:security@suse.de
 ```
 
 ```
