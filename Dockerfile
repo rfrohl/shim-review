@@ -1,6 +1,8 @@
 # syntax = docker/dockerfile:1.0-experimental
 FROM opensuse/leap:15.6
 
+ARG ARCHITECTURE
+ENV ARCHITECTURE=${ARCHITECTURE}
 ADD SUSE_Trust_Root.crt.pem /usr/share/pki/trust/anchors/SUSE_Trust_Root.crt.pem
 RUN update-ca-certificates
 RUN zypper -n in rpm-build build gnu-efi mozilla-nss-tools openssl pesign dos2unix efitools gcc13 pesign-obs-integration
