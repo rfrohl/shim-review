@@ -38,7 +38,7 @@ I think we're a pretty well known Linux distributor :)
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-SUSE Linux Enterprice Server 15 SP5 and other SLES variants
+openSUSE Leap 16and other openSUSE variants
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
@@ -125,6 +125,7 @@ https://build.opensuse.org/package/show/devel:openSUSE:Factory/shim
 This project build just against Factory, which is rather unstable. So it was branched to
 https://build.opensuse.org/package/show/home:jsegitz:branches:devel:openSUSE:Factory/shim
 to enable the build against 15.6, which is the main target
+FIXME might need to be changes if you build somewhere else
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -355,35 +356,33 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 *******************************************************************************
 yes
 
+grub2:
 ```
-fwupdate: FIXME not yet checked
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupdate,1,Firmware Update Utility,fwupdate,12,https://github.com/rhboot/fwupdate
-fwupdate.sle,1,SUSE Linux Enterprise,fwupdate,12,mail:security-team@suse.de
+grub,5,Free SoftwareFoundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.opensuse,1,The openSUSE Project,grub2,2.12,mailto:security@suse.de
 ```
 
+fwupd:
 ```
-grub2: FIXME not yet checked
-sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,5,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
-grub.sle,1,SUSE Linux Enterprise,grub2,2.12,mailto:security@suse.de
-```
-
-```
-fwupd: FIXME not yet checked
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd,1,Firmware update daemon,fwupd,1.7.3,https://github.com/fwupd/fwupd
-fwupd-sle,1,SUSE Linux Enterprise,fwupd,1.7.3,https://build.opensuse.org
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.7,https://github.com/fwupd/fwupd-efi
+fwupd-efi.opensuse,1,The openSUSE Project,fwupd-efi,1.7,mailto:security@suse.de
 ```
 
+shim:
 ```
-shim: FIXME not yet checked
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.sle,1,SUSE Linux Enterprise,shim,16.0,mail:security@suse.de
+shim.opensuse,1,The openSUSE project,shim,16.0,mail:security@suse.de
 ```
 
-FIXME entry for systemd boot
+systemd boot
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+systemd-boot,1,The systemd Developers,systemd,257,https://systemd.io/
+systemd-boot.opensuse,1,The openSUSE Project,systemd,257.7-160000.2.5,mailto:security@suse.de
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -457,7 +456,7 @@ n/a
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
 *******************************************************************************
-It launches grub, fwupdate, fwupd and systemd boot
+It launches grub, fwupd and systemd boot
 
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
