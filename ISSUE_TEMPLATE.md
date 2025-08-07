@@ -13,6 +13,7 @@ Confirm the following are included in your repo, checking each box:
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
 `https://github.com/jsegitz/shim-review/tree/SUSE-openSUSE_tumbleweed-shim-15.8-20240301`
+FIXME if you need to move this to your own fork (probably makes sense)
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
@@ -37,3 +38,8 @@ sha256sum: FIXME
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
 https://github.com/rhboot/shim-review/issues/394
+
+*******************************************************************************
+### If no security contacts have changed since verification, what is the link to your request, where they've been verified (if any, otherwise N/A)?
+*******************************************************************************
+https://github.com/rhboot/shim-review/issues/419
