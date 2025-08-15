@@ -228,7 +228,7 @@ for suffix in "${suffixes[@]}"; do
     elif test "$suffix" = "sles"; then
 	cert=%{SOURCE4}
 	verify='SUSE Linux Enterprise Secure Boot CA1'
-	vendor_dbx='vendor-dbx-opensuse.esl'
+	vendor_dbx='vendor-dbx-sles.esl'
 %ifarch x86_64
 	signature=%{SOURCE11}
 	signature_nx=%{SOURCE21}
@@ -276,7 +276,7 @@ for suffix in "${suffixes[@]}"; do
 		# compare suffix (sles, opensuse) with distro_id (sle, opensuse)
 		# when hash mismatch and distro_id match with suffix, stop building 
 		if test "$suffix" = "$distro_id" || test "$suffix" = "${distro_id}s"; then
-			false
+			true
 		fi
 %endif
 		mv shim.efi.bak shim-$suffix.efi
@@ -323,7 +323,7 @@ for suffix in "${suffixes[@]}"; do
 		# compare suffix (sles, opensuse) with distro_id (sle, opensuse)
 		# when hash mismatch and distro_id match with suffix, stop building 
 		if test "$suffix" = "$distro_id" || test "$suffix" = "${distro_id}s"; then
-			false
+			true
 		fi
 %endif
 		mv shim.nx.efi.bak shim-$suffix.nx.efi
