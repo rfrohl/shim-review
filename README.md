@@ -123,9 +123,8 @@ You can also point to your custom git servers, where the code is hosted.
 https://build.opensuse.org/package/show/devel:openSUSE:Factory/shim
 
 This project build just against Factory, which is rather unstable. So it was branched to
-https://build.opensuse.org/package/show/home:jsegitz:branches:devel:openSUSE:Factory/shim
+https://build.opensuse.org/package/show/home:rfrohl:branches:devel:openSUSE:Factory/shim
 to enable the build against 15.6, which is the main target
-FIXME might need to be changes if you build somewhere else
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -276,6 +275,7 @@ podman build --no-cache --build-arg ARCHITECTURE=aarch64  -t opensuse_shim:16.0 
 The Dockerfile builds shim and hashes the resulting file. If you want to do it manually:
 The shim sources are in usr/src/packages/SOURCES/. Running
 docker run --rm -it opensuse_shim:16.0 /bin/sh
+sh-4.4# source /etc/profile.d/suse-buildsystem.sh
 sh-4.4# SOURCE_DATE_EPOCH=1754481600 rpmbuild -ba /usr/src/packages/SOURCES/*spec
 gives you the build rpm which you can inspect with unrpm, After unpacking you
 can get the hashes.
@@ -304,20 +304,20 @@ Last was shim 15.8. We want the new upstream release to fix security issues
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 x86_64 shim-opensuse.nx.x86.efi
-pesign: FIXME
-sha256sum: FIXME
+pesign: 81017315005ba0daecb027bd5d2cc5f95233ce442fc057b9ecca3824a42746df
+sha256sum: 40a5acb01a5558df20531c28d9db10515135e7d7302e542fd6ed936db7572e15
 
 x86_64 shim-opensuse.x86.efi
-pesign: FIXME
-sha256sum: FIXME
+pesign: f8daafd8482af5d9a0a59df9dff5f78ad9607e7e6c35c43ef01db63ca8796608
+sha256sum:  e4fb2a36c9ffc0222b1cc8860c8603c19e2e56ca72f5b80f844badcdaf3d7c39
 
 aarch64 shim-opensuse.nx.aarch64.efi
-pesign: FIXME
-sha256sum: FIXME
+pesign: 040b53274166dcf9fe669b6a4017693d5ebf7973da92121ffcd847e6ff8c9824
+sha256sum: ec79a215b065dafbd1c38573461f41842d4a502f7788a70135af5236165e1d8a
 
 aarch64 shim-opensuse.aarch64.efi
-pesign: FIXME
-sha256sum: FIXME
+pesign: bce5983b93dbd487db9c9abb40383a2484348acb1f5b56c5ccad25f1e0b62858
+sha256sum: 6588f4d8654321b8ac3c652d3352f1f08974479a30d8cd1a3cd5bb10a659e4a
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
