@@ -38,7 +38,7 @@ I think we're a pretty well known Linux distributor :)
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-openSUSE Leap 16and other openSUSE variants
+openSUSE Leap 16 and other openSUSE variants
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
@@ -134,10 +134,6 @@ Unchanged from last reviewed shim:
 - shim-arch-independent-names.patch: use the Arch-independent names.
 - shim-change-debug-file-path.patch: change path of debug file
 - shim-disable-export-vendor-dbx.patch: Prevent issues with ill behaving firmware
-
-New patches:
-- shim-alloc-one-more-byte-for-sprintf.patch: Increased buffer for sprintf
-- shim-change-automatically-enable-MOK_POLICY_REQUIRE_NX.patch: Dynamically detect if shim has the NX bit set and the system has an appropriate protocol installed *and* appears to be enforcing NX. Then enable the MOK policy bit to require NX.
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
@@ -303,20 +299,20 @@ Last was shim 15.8. We want the new upstream release to fix security issues
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 x86_64 shim-opensuse.nx.x86.efi
-pesign: 81017315005ba0daecb027bd5d2cc5f95233ce442fc057b9ecca3824a42746df
-sha256sum: 40a5acb01a5558df20531c28d9db10515135e7d7302e542fd6ed936db7572e15
+pesign: 07797e52548d05cef15d100980e48acb4109f103375b4088ffcfe759beb107d1
+sha256sum: 7eb69eca4a3c9524f31977613c13bf2c35014142b4f0b29e157baeec9d2fe5ae
 
 x86_64 shim-opensuse.x86.efi
-pesign: f8daafd8482af5d9a0a59df9dff5f78ad9607e7e6c35c43ef01db63ca8796608
-sha256sum:  e4fb2a36c9ffc0222b1cc8860c8603c19e2e56ca72f5b80f844badcdaf3d7c39
+pesign: a6e3c502d07ac562042c6d4e223b5bfc26bd75bb9489691b5ab5ecb0681d9863
+sha256sum: 8303147d8a77df4bd98b4e4f81404bc9d53f85106e9b6c1b4e01ab614f8117e9
 
 aarch64 shim-opensuse.nx.aarch64.efi
-pesign: 040b53274166dcf9fe669b6a4017693d5ebf7973da92121ffcd847e6ff8c9824
-sha256sum: ec79a215b065dafbd1c38573461f41842d4a502f7788a70135af5236165e1d8a
+pesign: 6f8f8a7c4be5d3af83124aef2c77984a86b026b27e83f2508c6191a4e556f3b4
+sha256sum: dc5e7e93f415636fb07a72aeb7af8304a7b9b2848766bcecd03a7b7ad742ccf2
 
 aarch64 shim-opensuse.aarch64.efi
-pesign: bce5983b93dbd487db9c9abb40383a2484348acb1f5b56c5ccad25f1e0b62858
-sha256sum: 6588f4d8654321b8ac3c652d3352f1f08974479a30d8cd1a3cd5bb10a659e4a
+pesign: 60c7080942c8e93f838b6ae7e6cbde71b1632b0d80dc7631e41e3c70234146f7
+sha256sum: d607fadfcc5de71a8394957542278a3a46cb306470743b6be2b56b618fb102c9
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
