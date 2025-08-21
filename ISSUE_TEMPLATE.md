@@ -19,20 +19,20 @@ FIXME if you need to move this to your own fork (probably makes sense)
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 x86_64 shim-sles.nx.x86.efi
-pesign: 7eeeaae8a1ff8959fe034ad2139eeee8363cd52d19a2de888478e471be3f8c61
-sha256sum: 3ca0605bb086d9873b86bfcbe1e511c9016ba0990b030eeb330e55e7d8f77097  
+pesign: 761abe18b1fb57a2c6afdf6d2849eb86da4504718973cd5046a975df581a1c80
+sha256sum: 1ca3daab4ebe77adb11215756e3b174b71f6d5eafb65e523ea970e6750949ba5
 
 x86_64 shim-sles.x86.efi
-pesign: 71e5b28af465473e42c261936382154cd44fa9049722d49b8b84c30cf05cd781
-sha256sum: 9f4a30e3692a40a88b9ee83eeb66daff01bba41b86195b571053987faa6cfdd7
+pesign: d42f13eb5cb2d2a6166351755f77b2d9311141d94b17f3ca9ffc51412134479c
+sha256sum: 2802c142cb9f90ef04c6258934b9bdd285da07c9d348f34fbe08403f221b6546
 
 aarch64 shim-sles.nx.aarch64.efi
-pesign: 3dbea076748ac09222b951e0d0cec9611804d09ee6676a252a16afdd1506e2bc
-sha256sum: 5660e8a501cc40739e02b642211ea54bf26edf97eb1e376bb3fd2bc4bfc405d5
+pesign: 36596346e0981252ba51a0bb66857583464229c00a7105c998edcfdd9296ed99
+sha256sum: 20445c112a229e6a1f5958fb35be7c82d7fb054b8e6cb80f896ad47128569acc
 
 aarch64 shim-sles.aarch64.efi
-pesign: 49b1c30211fbe789108ab96f4e6679b43b356f78112683f01b610105bc0cc688
-sha256sum: 9d393a38186ead4da0bc17ebcdd4b6ebb859a82b3dfbc093834b4a464021799a
+pesign: a5b2af5ed33cea6d6680cbc19237801574ef05349b6cdc50cf98e1c77112fe4b
+sha256sum: 523fe8b2e21af5e41f82ae7fa58095043c3b06681a569f5dd6195f54b2e9cd5a
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
