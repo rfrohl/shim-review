@@ -7,7 +7,7 @@ ADD SUSE_Trust_Root.crt.pem /usr/share/pki/trust/anchors/SUSE_Trust_Root.crt.pem
 RUN update-ca-certificates
 # get an up to date SCCcredentials files from a VM
 ENV ADDITIONAL_MODULES sle-module-desktop-applications,sle-module-development-tools
-RUN zypper -n in rpm-build build gnu-efi mozilla-nss-tools openssl pesign dos2unix gcc12
+RUN zypper -n in rpm-build build gnu-efi mozilla-nss-tools openssl pesign dos2unix gcc13
 # not in the official repos
 ADD update-bootloader-rpm-macros-0-1.23.noarch.rpm /
 RUN zypper -n in /update-bootloader-rpm-macros-0-1.23.noarch.rpm 

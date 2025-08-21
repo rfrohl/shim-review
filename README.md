@@ -132,10 +132,6 @@ Unchanged from last reviewed shim:
 - shim-change-debug-file-path.patch: change path of debug file
 - shim-disable-export-vendor-dbx.patch: Prevent issues with ill behaving firmware
 
-New patches:
-- shim-alloc-one-more-byte-for-sprintf.patch: Increased buffer for sprintf
-- shim-change-automatically-enable-MOK_POLICY_REQUIRE_NX.patch: Dynamically detect if shim has the NX bit set and the system has an appropriate protocol installed *and* appears to be enforcing NX. Then enable the MOK policy bit to require NX.
-
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
 
