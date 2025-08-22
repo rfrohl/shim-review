@@ -19,19 +19,19 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 x86_64 shim-sles.nx.x86.efi
 pesign: 761abe18b1fb57a2c6afdf6d2849eb86da4504718973cd5046a975df581a1c80
-sha256sum: 1ca3daab4ebe77adb11215756e3b174b71f6d5eafb65e523ea970e6750949ba5
+sha256sum: df0c956127ea2510c965d17c385bd613c29f545f9c040635ef5ff18e6738ead8
 
 x86_64 shim-sles.x86.efi
 pesign: d42f13eb5cb2d2a6166351755f77b2d9311141d94b17f3ca9ffc51412134479c
-sha256sum: 2802c142cb9f90ef04c6258934b9bdd285da07c9d348f34fbe08403f221b6546
+sha256sum: 8a272d9ff2ee585b72a717a8c13ad1c093120546d60d934fd49ca7ef122149d1
 
 aarch64 shim-sles.nx.aarch64.efi
 pesign: 36596346e0981252ba51a0bb66857583464229c00a7105c998edcfdd9296ed99
-sha256sum: 20445c112a229e6a1f5958fb35be7c82d7fb054b8e6cb80f896ad47128569acc
+sha256sum: c42a6d8394bb042585526521bb0b423da041ef77f7173b6304a1fb5429bdfe79
 
 aarch64 shim-sles.aarch64.efi
 pesign: a5b2af5ed33cea6d6680cbc19237801574ef05349b6cdc50cf98e1c77112fe4b
-sha256sum: 523fe8b2e21af5e41f82ae7fa58095043c3b06681a569f5dd6195f54b2e9cd5a
+sha256sum: dbff0300fcd90a57f40a20decda6e20bf75934910780f3384a1e0063445965e4
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
