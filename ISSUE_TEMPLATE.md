@@ -12,8 +12,7 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-`https://github.com/jsegitz/shim-review/tree/SUSE-SLES15.3-shim-16.0-20250804`
-FIXME if you need to move this to your own fork (probably makes sense)
+`https://github.com/rfrohl/shim-review/tree/SUSE-SLES15.3-shim-16.1-20250821`
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?

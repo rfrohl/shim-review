@@ -348,24 +348,17 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 yes
 
 ```
-fwupdate: FIXME not yet correct
-sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupdate,1,Firmware Update Utility,fwupdate,12,https://github.com/rhboot/fwupdate
-fwupdate.sle,1,SUSE Linux Enterprise,fwupdate,12,mail:security-team@suse.de
-```
-
-```
-grub2: FIXME not yet correct
+grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,5,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
 grub.sle,1,SUSE Linux Enterprise,grub2,2.12,mailto:security@suse.de
 ```
 
 ```
-fwupd: FIXME not yet correct
+fwupd-efi:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd,1,Firmware update daemon,fwupd,1.7.3,https://github.com/fwupd/fwupd
-fwupd-sle,1,SUSE Linux Enterprise,fwupd,1.7.3,https://build.opensuse.org
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.7,https://github.com/fwupd/fwupd-efi
+fwupd-efi.sle,1,SUSE Linux Enterprise,fwupd-efi,1.7,mailto:security@suse.de
 ```
 
 ```
