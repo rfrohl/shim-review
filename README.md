@@ -369,7 +369,7 @@ shim:
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.opensuse,1,The openSUSE project,shim,16.0,mail:security@suse.de
+shim.opensuse,1,The openSUSE project,shim,16.1,mail:security@suse.de
 ```
 
 systemd boot
